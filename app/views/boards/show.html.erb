@@ -1,0 +1,18 @@
+<!-- <p id="notice"><%= notice %></p> -->
+
+<div class='day-of-week'>
+  <span><%= Time.now.strftime('%A') %></span>
+</div>
+
+<div class='message'>
+  <ul>
+    <% @board.message.each_line do |line| %>
+      <li><%= line %></li>
+    <% end %>
+  </ul>
+</div>
+
+<!--
+<%= link_to 'Edit', edit_board_path(@board) %> |
+<%= link_to 'Back', boards_path %>
+-->
