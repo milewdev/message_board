@@ -1,7 +1,9 @@
 <!-- <p id="notice"><%= notice %></p> -->
 
 <div class='day-of-week'>
-  <span><%= Time.now.strftime('%A') %></span>
+  <p><%= Time.now.strftime('%A') %></p>
+  <p><%= Time.now.strftime('%l:%M %P') %></p>
+  <p><%= Time.now.strftime('%e %B %Y') %></p>
 </div>
 
 <div class='message'>

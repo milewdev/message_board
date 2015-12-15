@@ -10,10 +10,15 @@ body {
 }
 
 .day-of-week {
-  font-size: 6em;
-  text-align: center;
-  margin: 1.8em;
+  color: cyan;
+  font-size: 4em;  
+  margin: 2em 0 1em 0;
   padding: 0;
+  text-align: center;
+
+  p {
+    font-size: inherit;
+  }
 }
 
 .message {
@@ -22,9 +27,9 @@ body {
 
   ul {
     font-size: 3em;
-    padding: 0;
     display: table;
     margin: 0 auto;
+    padding: 0;
 
     li {
       margin: 1.4em;
