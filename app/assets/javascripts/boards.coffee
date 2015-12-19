@@ -30,5 +30,5 @@ update_clock = ->
   $('.clock #date').text( format_date(now) )
 
 $ ->
-  update_clock
+  update_clock()
   setInterval(update_clock, 60 * 1000)
