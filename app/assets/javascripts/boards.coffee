@@ -23,12 +23,23 @@ format_month = (timestamp) ->
   names = [ 'January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December' ]
   names[ timestamp.getMonth() ]
 
-update_clock = ->
+refresh_clock = ->
   now = new Date
   $('.clock #day-of-week').text( format_day_of_week(now) )
   $('.clock #time').text( format_time(now) )
   $('.clock #date').text( format_date(now) )
 
+can_refresh_page = ->
+  6 <= (new Date()).getHours()
+
+refresh = ->
+  if can_refresh_page()
+    location.reload()
+  else
+    refresh_clock()
+
+one_minute = 60 * 1000
+
 $ ->
-  update_clock()
-  setInterval(update_clock, 60 * 1000)
+  refresh_clock()
+  setInterval(refresh, one_minute)
