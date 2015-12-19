@@ -1,19 +1,21 @@
-body {
+html, body {
   background-color: black;
   color: white;
   margin: 0;
   padding: 0;
+  width: 100%;
 }
 
 .clock {
   color: cyan;
-  font-size: 4em;
   margin: 2em 0 1em 0;
   padding: 0;
   text-align: center;
 
   p {
     font-size: inherit;
+    margin: 0;
+    padding: 0.4em;
   }
 }
 
@@ -22,13 +24,12 @@ body {
   padding: 0;
 
   ul {
-    font-size: 3em;
     display: table;
     margin: 0 auto;
     padding: 0;
 
     li {
-      margin: 1.4em;
+      margin: 1em;
       padding: 0;
     }
   }
@@ -40,5 +41,27 @@ body {
   h1 {
     font-weight: normal;
     font-size: 100%;
+  }
+}
+
+// small screen
+@media all and (max-width: 400px) {
+  .clock {
+    font-size: 1.5em;
+  }
+
+  .message ul li {
+    font-size: 1.5em;
+  }
+}
+
+// large screen
+@media all and (min-width: 401px) {
+  .clock {
+    font-size: 3em;
+  }
+
+  .message ul li {
+    font-size: 3em;
   }
 }
