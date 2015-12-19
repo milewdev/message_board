@@ -1,10 +1,13 @@
 class BoardsController < ApplicationController
-  before_action :set_board, only: [:show, :edit, :update, :destroy]
+  before_action :set_board, only: [:show, :readonly, :edit, :update, :destroy]
 
   # GET /boards
   # GET /boards.json
   def index
     @boards = Board.all
+  end
+
+  def readonly
   end
 
   # GET /boards/1

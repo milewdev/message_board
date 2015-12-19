@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
 
   resources :boards
+  get 'boards/:id/readonly' => 'boards#readonly'
 
   root to: 'boards#show', id: 1, as: :home
 
