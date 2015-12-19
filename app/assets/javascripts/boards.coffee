@@ -31,4 +31,4 @@ update_clock = ->
 
 $ ->
   update_clock
-  setInterval(update_clock, 1000)
+  setInterval(update_clock, 60 * 1000)
