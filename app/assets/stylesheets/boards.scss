@@ -8,13 +8,17 @@ html, body {
 
 .clock {
   color: cyan;
-  margin: 2em 0 1em 0;
+  margin: 3em 0 1em 0;
   padding: 0;
   text-align: center;
 
   p {
     margin: 0;
     padding: 0.4em;
+  }
+
+  #day-of-week {
+    margin-bottom: 0.1em;
   }
 }
 
@@ -65,7 +69,7 @@ html, body {
   }
 
   #day-of-week {
-    font-size: 6em;
+    font-size: 8em;
   }
 
   #time, #date {
