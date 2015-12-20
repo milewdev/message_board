@@ -13,7 +13,6 @@ html, body {
   text-align: center;
 
   p {
-    font-size: inherit;
     margin: 0;
     padding: 0.4em;
   }
@@ -46,22 +45,30 @@ html, body {
 
 // small screen
 @media all and (max-width: 400px) {
-  .clock {
+  .message ul li {
     font-size: 1.5em;
   }
 
-  .message ul li {
-    font-size: 1.5em;
+  #day-of-week {
+    font-size: 3em;
+  }
+
+  #time, #date {
+    font-size: 1em;
   }
 }
 
 // large screen
 @media all and (min-width: 401px) {
-  .clock {
+  .message ul li {
     font-size: 3em;
   }
 
-  .message ul li {
-    font-size: 3em;
+  #day-of-week {
+    font-size: 6em;
+  }
+
+  #time, #date {
+    font-size: 2em;
   }
 }
